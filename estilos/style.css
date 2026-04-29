@@ -104,3 +104,84 @@ div#social a{
 div#social a:hover {
     color: var(--destaque-inverso);
 }
+
+section#detalhes{
+   grid-column: 2;
+}
+
+article {
+    background-color: var(--fundo-card);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+article h2{
+    color: var(--destaque);
+    margin-bottom: 10px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    aspect-ratio: 16/9;
+}
+
+
+.video-container iframe{
+    position: absolute;
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#skill-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+#skill-container .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#skill-container .nome{
+    font-weight: bold;
+    color: var(--texto);
+}
+
+#skill-container .porcent {
+    font-weight: bold;
+    color: var(--destaque);
+}
+
+#skill-container .barra{
+    width: 100%;
+    height: 8px;
+    background-color: var(--fundo-principal);
+    border-radius: 4px;
+}
+
+#skill-container .progresso{
+   height: 100%;
+   background-color: var(--destaque-inverso); 
+   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #skill-container {
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+footer p{
+    background-color: var(--destaque);
+    color: var(--fundo-card);
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
