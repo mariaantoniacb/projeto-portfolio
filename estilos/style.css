@@ -19,6 +19,15 @@ branco: #e6edf3
     --fundo-card: #ffffff;
 }
 
+body.escuro{
+    --fundo-principal: #0c1519;
+    --texto: #e0e0e0;
+    --texto-inverso: #333333;
+    --destaque: #916753;
+    --destaque-inverso: #cf9d78;
+    --fundo-card: #3a3534;  /*#162127*/
+}
+
 
 
 body {
@@ -26,6 +35,7 @@ body {
     line-height: 1.5em;
     background-color: var(--fundo-principal);
     color: var(--texto);
+    transition: backgroud-color 0.5s, color 0.5s;
 }
 
 header {
